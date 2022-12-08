@@ -7,8 +7,108 @@
     <title>Bootstrap web</title>
     <link rel="stylesheet" href="css/main.css"/>
     <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   </head>
-  <body>    
+  <body>
+
+    <div class="container-fluid text-center row align-items-center">
+      <h1>
+        Explore
+      </h1>
+
+      <div class="row">
+      <div class="col-4"></div>
+
+      <div class="col-4">
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+      </div>
+
+      <div class="col-4"></div>
+      </div>
+  </div>
+
+  <div class="container-fluid my-3">
+    <div class="row text-center row align-items-center">
+      <div class="col-3"></div>
+
+      <div class="col-2 d-grid gap-2">
+        <button class="btn btn-primary" type="button">Events</button>
+      </div>
+
+      <div class="col-2 d-grid gap-2">
+        <button class="btn btn-primary" type="button">How often</button>
+      </div>
+
+      <div class="col-2 d-grid gap-2">
+        <button class="btn btn-primary" type="button">Travel time</button>
+      </div>
+
+      <div class="col-3"></div>
+    </div>
+  </div>
+
+  <div class="container-fluid text-center">
+    <h2>
+      Map of nearby groups
+    </h2>
+
+      <img src="images/mountain.png" class="border" style="width:500px" alt="picture of a castle"/>
+  </div>
+
+  <div class="container-fluid my-3">
+    <div class="row align-items-center text-center">
+      <div class="col-3"></div>
+
+      <div class="col-3">
+        <div class="my-3">
+        <button class="btn btn-primary btn-xl" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+          Time
+        </button>
+        
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+
+        </div>
+        </div>
+
+        <div class="my-3">
+        <button class="btn btn-primary btn-xl" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+          Location
+        </button>
+        
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+
+        </div>
+        </div>
+      </div>
+
+      <div class="col-3">
+        <div class="my-3">
+        <button class="btn btn-primary btn-xl" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+          Date
+        </button>
+        
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+
+        </div>
+        </div>
+
+        <div class="my-3">
+        <button class="btn btn-primary btn-xl" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+          Budget
+        </button>
+        
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+
+        </div>
+        </div>
+      </div>
+
+      <div class="col-3"></div>
+    </div>
+  </div>
 
     <div class="container-fluid">
       <nav class="navbar p-0 border">
@@ -128,6 +228,6 @@
         </div>
       </nav>
     </div>
-    
-</body>
+
+  </body>
 </html>
