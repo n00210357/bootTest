@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+@import "../node_modules/bootstrap/scss/functions";
+
+// Globals
+$enable-negative-margins: true;
+$enable-rounded: false;
+
+// Override theme
+$primary: rgb(0, 0, 0);
+
+
+// Spacing
+$spacer: 8px;
+$spacers: (
+	0: 0,
+	1: $spacer,
+	2: $spacer * 1.5,
+	3: $spacer * 2,
+	4: $spacer * 2.5,
+	5: $spacer * 3,
+	6: $spacer * 4,
+);
+
+// Radius
+
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+// Custom Colours
+$custom-colors: (
+	"default": rgb(65, 197, 211),
+	"hover": rgb(9, 168, 250),
+	"clicked": rgb(97, 110, 239),
+	"border": #C0C0C0,
+);
+
+// merge our colors with the theme!
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+// remove colors from the theme
+$theme-colors: map-remove(
+	$theme-colors,
+	"danger",
+	"success",
+	"info",
+	"warning"
+);
+
+.link
+{
+	color: rgb(65, 197, 211);
+}
+
+.link:hover
+{
+	color: rgb(9, 168, 250);
+}
+
+.link:focus
+{
+	color: rgb(97, 110, 239);
+}
+
+.btn-default
+{
+	background-color: rgb(65, 197, 211);
+}
+
+.btn-default:hover
+{
+	background-color: rgb(9, 168, 250);
+}
+
+.btn-default:focus
+{
+	background-color: rgb(97, 110, 239);
+}
+
+// FONT
+$font-family-base: "Manrope";
+$font-size-root: null !default;
+$font-size-base: 8px !default; // Assumes the browser default, typically `16px`
+$font-size-s: $font-size-base * 1;
+$font-size-sm: $font-size-base * 1.5;
+$font-size-lg: $font-size-base * 2 !default;
+
+$font-weight-lighter:         lighter !default;
+$font-weight-light:           300 !default;
+$font-weight-normal:          400 !default;
+$font-weight-medium:          500 !default;
+$font-weight-bold:            700 !default;
+$font-weight-base:            $font-weight-normal !default;
+
+$h1-font-size: $font-size-base * 4 !default;
+$h2-font-size: $font-size-base * 3 !default;
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
