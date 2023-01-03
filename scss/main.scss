@@ -81,7 +81,7 @@ $theme-colors: map-remove(
 // FONT
 $font-family-base: "Manrope";
 $font-size-root: null !default;
-$font-size-base: 8px !default; // Assumes the browser default, typically `16px`
+$font-size-base: 8px !default;
 $font-size-s: $font-size-base * 1;
 $font-size-sm: $font-size-base * 1.5;
 $font-size-lg: $font-size-base * 2 !default;
